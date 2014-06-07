@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+
+    <title>Votre Email</title>
+
+    <script type="text/javascript" src="js/jquery/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/angular/angular.js"></script>
+
+    <!-- angular module -->
+    <script type="text/javascript" src="js/angular/angular-route.js"></script>
+    <script type="text/javascript" src="js/angular/angular-resource.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script type="text/javascript" src="js/application/appWebmail.js"></script>
+</head>
+<body ng-app="webmail" ng-controller="WebmailCtrl">
+    <div class="container">
+            <ul class="nav nav-pills spacer">
+                <li ng-repeat="dossier in dossiers" ng-class="{active : dossier == dossierCourant }"><a ng-click="selectionnerDossier(dossier)">{{dossier.label}}</a></li>
+            </ul>
+
+        <div ng-show="dossierCourant != null && emailCourant == null">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>De :</th>
+                        <th>à</th>
+                        <th>Sujet</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody class="tab-content">
+                        <tr ng-repeat="email in dossierCourant.emails" ng-click="selectionEmail(email)" class="clickable">
+                            <td>{{email.from}}</td>
+                            <td>{{email.to}}</td>
+                            <td>{{email.subjectt}}</td>
+                            <td>{{email.date}}</td>
+                        </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div ng-show="dossierCourant != null && emailCourant == null">
+            <div class="alert alert-info">
+                Le dossier contien {{dossierCourant.emails.length}} mails.
+            </div>
+         </div>
+        <div ng-show="emailCourant != null" class="spacer">
+            <div class="well">
+                <h1>{{emailCourant.subject}}</h1>
+                <p><label>De :</label> <span>{{emailCourant.from}}</span></p>
+                <p><label>à :</label><span>{{emailCourant.to}}</span> </p>
+                <p><label>Date :</label><span>{{emailCourant.date}}</p>
+            </div>
+                <p>{{emailCourant.content}}</p>
+        </div>
+    </div>
+</body>
+</html>
