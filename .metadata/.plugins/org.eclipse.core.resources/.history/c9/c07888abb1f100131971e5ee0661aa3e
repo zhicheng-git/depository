@@ -1,0 +1,5 @@
+package com.zhicheng.repository.service;
+
+public class ClientService {
+
+}

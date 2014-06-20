@@ -24,6 +24,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\zhicheng\git\depository\front-end"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -38,10 +39,13 @@
 			<item value="com.zhicheng.repository"/>
 		</list>
 		<list key="package">
-			<item value="com.zhicheng.repository.service"/>
+			<item value="org.front.end"/>
+			<item value="org.back.end"/>
+			<item value="com.zhicheng.repository"/>
 		</list>
 		<list key="artifactId">
-			<item value="service"/>
+			<item value="front-end"/>
+			<item value="back-end"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -54,12 +58,34 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="47" key="y"/>
+		<item value="503" key="x"/>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="front-end"/>
+			<item value="back-end"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.zhicheng.repository"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="front-end"/>
+			<item value="aggregate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

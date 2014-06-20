@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+C:\Users\zhicheng\git\depository\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\148127182.index
+\front-end\src\main\resources
+C:\Users\zhicheng\git\depository\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2011192957.index
+\aggregate\src\main\java
+C:\Users\zhicheng\git\depository\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3416152376.index
+\aggregate\src\main\java
